@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-04-14T01:01:35.745Z",
+    "end": "2021-04-14T01:01:38.833Z",
+    "duration": 3088,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "50b39ca0-0bab-428e-a501-723bc8f25bee",
+      "title": "",
+      "fullFile": "cypress/integration/olx.feature",
+      "file": "cypress/integration/olx.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28796e1a-def8-4081-89de-729b3fad19e6",
+          "title": "Pesquisa OLX",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar primeiro resultado da pesquisa",
+              "fullTitle": "Pesquisa OLX Verificar primeiro resultado da pesquisa",
+              "timedOut": null,
+              "duration": 487,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"snapshots/olx.feature/Pesquisa OLX -- Verificar primeiro resultado da pesquisa (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: hooks.geraLog is not a function",
+                "estack": "TypeError: hooks.geraLog is not a function\n    at Object.visita (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:80:9)\n    at Context.eval (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:220:15)\n    at Context.resolveAndRunStepDefinition (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:26483:9)\n    at Context.eval (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:25852:35)",
+                "diff": null
+              },
+              "uuid": "0f9331f8-8a3f-49cf-8341-972ee343b891",
+              "parentUUID": "28796e1a-def8-4081-89de-729b3fad19e6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar resultado da pesquisa na segunda página",
+              "fullTitle": "Pesquisa OLX Verificar resultado da pesquisa na segunda página",
+              "timedOut": null,
+              "duration": 460,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"snapshots/olx.feature/Pesquisa OLX -- Verificar resultado da pesquisa na segunda página (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: hooks.geraLog is not a function",
+                "estack": "TypeError: hooks.geraLog is not a function\n    at Object.visita (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:80:9)\n    at Context.eval (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:220:15)\n    at Context.resolveAndRunStepDefinition (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:26483:9)\n    at Context.eval (http://localhost:64248/__cypress/tests?p=cypress/integration/olx.feature:25852:35)",
+                "diff": null
+              },
+              "uuid": "7ab8ab5b-bced-4811-ae12-1ff0e7aaabba",
+              "parentUUID": "28796e1a-def8-4081-89de-729b3fad19e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0f9331f8-8a3f-49cf-8341-972ee343b891",
+            "7ab8ab5b-bced-4811-ae12-1ff0e7aaabba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 947,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

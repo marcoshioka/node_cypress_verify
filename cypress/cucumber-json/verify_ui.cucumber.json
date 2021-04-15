@@ -1,0 +1,78 @@
+[
+  {
+    "description": "As a costumer\nWould like to access Verify website\nTo see all products and services",
+    "keyword": "Feature",
+    "name": "VerifyMyAge",
+    "line": 5,
+    "id": "verifymyage",
+    "tags": [
+      {
+        "name": "@verify_ui",
+        "line": 4
+      }
+    ],
+    "uri": "verify_ui.feature",
+    "elements": [
+      {
+        "id": "verifymyage;verify-pricing",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Verify Pricing",
+        "tags": [
+          {
+            "name": "@verify_ui",
+            "line": 4
+          },
+          {
+            "name": "@verify_pricing",
+            "line": 25
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I access VerifyMyAge's website",
+            "result": {
+              "status": "passed",
+              "duration": 1177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I select 'Pricing'",
+            "result": {
+              "status": "passed",
+              "duration": 907000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I must see pricing details",
+            "result": {
+              "status": "passed",
+              "duration": 654000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "each integration per type",
+            "result": {
+              "status": "failed",
+              "duration": 4114000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '//div[contains(@class, 'brand-ebay')]' within the element: [ <div.card-col>, 2 more... ] but never did.\n    at Object.pricingIntegrationTypes (https://www.verifymyage.co.uk/__cypress/tests?p=cypress/integration/verify_ui.feature:193:27)\n    at Context.eval (https://www.verifymyage.co.uk/__cypress/tests?p=cypress/integration/verify_ui.feature:351:15)\n    at Context.resolveAndRunStepDefinition (https://www.verifymyage.co.uk/__cypress/tests?p=cypress/integration/verify_ui.feature:26529:9)\n    at Context.eval (https://www.verifymyage.co.uk/__cypress/tests?p=cypress/integration/verify_ui.feature:25898:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

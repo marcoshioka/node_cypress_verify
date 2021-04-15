@@ -1,0 +1,138 @@
+[
+  {
+    "description": "As an API consumer\nWould like to get search results in VerifyMyAge docs\nTo see all articles related",
+    "keyword": "Feature",
+    "name": "VerifyMyAge Search API",
+    "line": 5,
+    "id": "verifymyage-search-api",
+    "tags": [
+      {
+        "name": "@verify_search_api",
+        "line": 4
+      }
+    ],
+    "uri": "verify_api.feature",
+    "elements": [
+      {
+        "id": "verifymyage-search-api;search-results-200---'cenário-positivo'",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Search Results 200 - 'cenário positivo'",
+        "tags": [
+          {
+            "name": "@verify_search_api",
+            "line": 4
+          },
+          {
+            "name": "@search_results",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "VerifyMyAGe doc rote with search 'teste'",
+            "result": {
+              "status": "passed",
+              "duration": 324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I realize a POST in 'cenário positivo'",
+            "result": {
+              "status": "failed",
+              "duration": 4026000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '{\"message\":\"\\\\\"validUntil\\\\\" parameter expired (less than current date)\",\"status\":400}' to contain 'hits'\n    at Context.eval (http://localhost:64643/__cypress/tests?p=cypress/integration/verify_api.feature:270:30)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "verifymyage-search-api;search-results-200---'cenário-negativo'",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Search Results 200 - 'cenário negativo'",
+        "tags": [
+          {
+            "name": "@verify_search_api",
+            "line": 4
+          },
+          {
+            "name": "@search_results",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "VerifyMyAGe doc rote with search 'udhsuoaidiosajdiojasiosdjaio'",
+            "result": {
+              "status": "passed",
+              "duration": 377000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I realize a POST in 'cenário negativo'",
+            "result": {
+              "status": "failed",
+              "duration": 4025000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '{\"message\":\"\\\\\"validUntil\\\\\" parameter expired (less than current date)\",\"status\":400}' to contain 'hits'\n    at Context.eval (http://localhost:64643/__cypress/tests?p=cypress/integration/verify_api.feature:270:30)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "verifymyage-search-api;search-results-200---'cenário-positivo'",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Search Results 200 - 'cenário positivo'",
+        "tags": [
+          {
+            "name": "@verify_search_api",
+            "line": 4
+          },
+          {
+            "name": "@search_results",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "VerifyMyAGe doc rote with search 'HMAC'",
+            "result": {
+              "status": "passed",
+              "duration": 385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I realize a POST in 'cenário positivo'",
+            "result": {
+              "status": "failed",
+              "duration": 4010000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '{\"message\":\"\\\\\"validUntil\\\\\" parameter expired (less than current date)\",\"status\":400}' to contain 'hits'\n    at Context.eval (http://localhost:64643/__cypress/tests?p=cypress/integration/verify_api.feature:270:30)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
