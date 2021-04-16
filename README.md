@@ -72,7 +72,7 @@ npm run tags TAGS='@all'; npm run report
 ### CircleCI: 
 It was included a configuration to execut this automation in CircleCI (CI/CD/Continuous Testing). The config is in "circle.yml" file, in the project root. With this config the project execute in Circle CI with Cucumber and Electron, including the evidences/artifacts in the end of execution.
 
-### Informação de versões:
+### Version information:
 - 1.0.0: first version
 
 ### Author:
