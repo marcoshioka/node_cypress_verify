@@ -1,7 +1,7 @@
 # NODE_CYPRESS_VERIFY
 
 ## README 
-Test Automation repository with Javascript (Node.js), Cucumber and Cypress
+Test Automation repository with Javascript (Node.js), Cucumber and Cypress, with UI and API tests.
 
 #### Basic framework: 
 - Node.js, Cucumber and Cypress.
@@ -26,7 +26,7 @@ Test Automation repository with Javascript (Node.js), Cucumber and Cypress
 It was configured Mochawesome-report and the Cucumber-html-report in this project.
 
 **Mochawesome-report**
-_ It was implemented to work correctly when executed just with a single feature.
+- It was implemented to work correctly when executed just with a single feature.
 - Available in "mochawesome-report" directory.
 - The failed steps prints are available in folder "snapshots"
 - If a step fails, but a scenario reexecution is passed, Mochawesome displays an error message even with test passed.
