@@ -3,7 +3,7 @@ import * as hooks from '../hooks';
 
 const VERIFY_URL = 'https://www.verifymyage.co.uk/';
 const VERIFY_ICON = "//a[@id='logo']";
-const HEADER_OPTION = "//div[@class='actions']//a";
+const HEADER_OPTION = "//div[@class='actions']//li/a";
 
 //Function to access VerifyMyAge webpage 
 export function visit() {
@@ -13,8 +13,7 @@ export function visit() {
 }
 
 //Function to select an option in header 
-export function selectOption(header_option) {
-    var header_format = header_option.replace(/'/g, '').trimStart();
-    cy.xpath(HEADER_OPTION).contains(header_format).click()
-    hooks.generateLog('Option ' + header_format + ' selected')
+export function selectOption(header_choice) {
+    cy.xpath(HEADER_OPTION).contains(header_choice).click()
+    hooks.generateLog('Option ' + header_choice + ' selected')
 }   

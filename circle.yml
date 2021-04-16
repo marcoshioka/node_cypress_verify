@@ -21,7 +21,7 @@ jobs:
             - ~/.npm
             - ~/.cache
      
-      - run: npm run tags TAGS='@verify'; npm run report
+      - run: npm run tags TAGS='@all'; npm run report
 
       - store_artifacts:
           path: /root/project/cypress/videos
@@ -30,10 +30,6 @@ jobs:
       - store_artifacts:
           path: /root/project/report    
           destination: report
-                
-      - store_artifacts:
-          path: /root/project/mochawesome-report
-          destination: mochawesome
 
 
 workflows:

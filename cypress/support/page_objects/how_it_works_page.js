@@ -17,7 +17,7 @@ export function howItWorks() {
 
 //Function to check Verification Methods component
 export function verificationMethods() {
-    cy.xpath(VERIFICATION_METHODS_TITLE).should('be.visible')
+    cy.xpath(VERIFICATION_METHODS_TITLE).should('be.visible').scrollIntoView()
     cy.xpath(VERIFICATION_METHODS_COMPONENT).contains(VERIFICATION_METHODS_TEXT)
     hooks.generateLog('Verification Methods content is visible')
 }   

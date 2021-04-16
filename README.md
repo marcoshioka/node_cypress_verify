@@ -26,13 +26,14 @@ Test Automation repository with Javascript (Node.js), Cucumber and Cypress
 It was configured Mochawesome-report and the Cucumber-html-report in this project.
 
 **Mochawesome-report**
+_ It was implemented to work correctly when executed just with a single feature.
 - Available in "mochawesome-report" directory.
 - The failed steps prints are available in folder "snapshots"
 - If a step fails, but a scenario reexecution is passed, Mochawesome displays an error message even with test passed.
 - If a scenario fails, Mochawesome apresenta displays an error message with print.
 
 **Cucumber-html-report**
-- Available in "report" directory
+- Available in "report" directory.
 - It's display the features steps and when it fails, the error message.
 
 #### How to run the tests:
@@ -60,12 +61,12 @@ npx cypress run --browser chrome
 **There are some run scripts configured in package.json**
 - To run Cypress by tags, use the running script like the example bellow: 
 ```sh
-npm run tags TAGS='@verify
+npm run tags TAGS='@verify_ui'
 ```
 
 - To run Cypress by tags and generate a report in the end, executing the tags script and report together, use the example bellow: 
 ```sh   
-npm run tags TAGS='@verify'; npm run report
+npm run tags TAGS='@all'; npm run report
 ```
 
 ### CircleCI: 

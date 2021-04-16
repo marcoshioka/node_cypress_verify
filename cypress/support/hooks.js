@@ -3,7 +3,7 @@
 const addContext = require('mochawesome/addContext')
 
 
-export function verificaSnapshot() {
+export function verifySnapshot() {
     cy.matchImageSnapshot()
     cy.task('log', 'Regressive layout test is ok')
 }

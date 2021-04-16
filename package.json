@@ -1,4 +1,6 @@
 {
+    "name": "node_cypress_verify",
+    "author": "Marcos Ribeiro Hioka",
     "scripts": {
         "cy:open": "cypress open",
         "cy:run": "cypress run",

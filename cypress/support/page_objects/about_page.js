@@ -3,9 +3,9 @@ import * as hooks from '../hooks';
 
 const ABOUT_TITLE = "//h1";
 const ABOUT_TEXT = 'VerifyMyAge was founded by a team of eCommerce specialists that understand the importance of robust and effective age verification solutions.';
-const MANAGEMENT_TEAM_TITLE = "//section[contains(@class,'text-center')]//h2[@class]"
-const MANAGEMENT_TEAM_TEXT = 'Meet the management team'
-const TEAM_MEMBER = "//div[@class='team']//h3"
+const MANAGEMENT_TEAM_TITLE = "//section[contains(@class,'text-center')]//h2[@class]";
+const MANAGEMENT_TEAM_TEXT = 'Meet the management team';
+const TEAM_MEMBER = "//div[@class='team']//h3";
 
 //Function to check About content
 export function aboutContent() {
