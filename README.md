@@ -45,7 +45,7 @@ or
 ```sh
 npx cypress run
 ```
-ou pelo script 
+ou using command
 ```sh
 npm run cy:run
 ```
